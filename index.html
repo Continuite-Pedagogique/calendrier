@@ -9,40 +9,78 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/4accd42ac8.js" crossorigin="anonymous"></script>
 
-    <!-- Custom styles -->
+    <!-- CSS Personnalisé -->
     <link rel="stylesheet" type="text/css" href="custom.css">
   </head>
 
   <body>
-    <!-- Navigation bar -->
+    <!-- Barre navigation -->
     <nav class="navbar navbar-light bg-light justify-content-between">
-      <div class="container">
-      <a class="navbar-brand">Continuité Pédagogique</a>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fas fa-tv mr-2"></i>Ajouter sa web-conf</button>
-    </div>
+      <div class="container py-2">
+        <a class="navbar-brand">Continuité Pédagogique</a>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fab fa-angellist mr-2"></i>Proposer un moment d'échange</button>
+      </div>
     </nav>
 
-  <main role="main" class="container mt-5">
-    <h3 class="pb-4 mb-4 font-italic border-bottom">Calendrier des échanges en ligne</h3>
-    <iframe class="airtable-embed" src="https://airtable.com/embed/shrQP9OWlj2EoXnht?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>  
-   </main><!-- /.container -->
+    <!-- Contenu principal-->
+    <main role="main" class="container mt-5">
+      <div class="mb-5">
+        <h3 class="pb-4 mb-4 font-italic border-bottom">Qu'est-ce que c'est ?</h3>
+        <p>Un site pour récenser les moments d'échanges que proposent les enseignants afin de discuter postures, pratiques et prises en main de méthodes et d'outils pour assurer la continuité pédagogique avec les élèves et les parents.</p>
+      </div>
+      <div class="mb-5"> 
+        <h3 class="pb-4 mb-4 font-italic border-bottom">Comment ça marche ?</h3>
+        <div class="row">
+          <div class="col-sm text-center">
+            <div class="step-case mx-auto mb-4">
+              <i class="fas fa-search fa-7x text-primary py-4"></i>
+            </div>
+            
+            <h3>Etape 1</h3>
+            <p>Je cherche à échanger avec des collègues pour m'aider à assurer la continuité pédagogique.</p>
+          </div><!-- col 1/3 -->
+          <div class="col-sm text-center">
+            <div class="step-case mx-auto mb-4">
+              <i class="fas fa-user-astronaut fa-7x text-primary py-4"></i>
+            </div>
+            
+            <h3>Etape 2</h3>
+            <p>Les enseignants qui organisent des temps d'échanges et d'entraident ajoutent les modalités (date, heure, visio / échange twitter / chat...).</p>
+          </div><!-- col 1/3 -->
+          <div class="col-sm text-center">
+            <div class="step-case mx-auto mb-4">
+              <i class="far fa-comments fa-7x text-primary py-4"></i>
+            </div>
+            <h3>Etape 3</h3>
+            <p>J'assiste à une visio sur le sujet donné, je pose mes questions et je repars avec des idées concrètes.</p>
+          </div><!-- col 1/3 -->
+        </div>
+        <div class="text-center my-5"><h3>Consulter les prochains moments d'échanges 👇</h3></div>
+      </div>
+      
+      <h4 class="mt-4 font-italic">Calendrier des jours à venir</h4>
+      <iframe class="airtable-embed" src="https://airtable.com/embed/shrQP9OWlj2EoXnht?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>  
+    </main><!-- /.container -->
 
-  <!-- Modal ajouter sa web conf -->
-  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <iframe class="airtable-embed" src="https://airtable.com/embed/shrGj26qYDC0TYkQl?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="900" style="background: transparent; border: 1px solid #ccc;"></iframe>
+    <!-- Modal ajouter sa web conf -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <iframe class="airtable-embed" src="https://airtable.com/embed/shrGj26qYDC0TYkQl?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="900" style="background: transparent; border: 1px solid #ccc;"></iframe>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- footer -->
-  <div class="footer py-3">
-    <div class="container clearfix">
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
-      
-      <a href="mailto:question@continuitepedagogique.org" class="btn btn-primary float-right"><i class="far fa-paper-plane mr-2"></i>Des questions ?</a>
+
+    <!-- footer -->
+    <div class="footer mt-5 py-3">
+      <div class="container clearfix">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
+        
+        <a href="mailto:question@continuitepedagogique.org" class="btn btn-primary float-right"><i class="far fa-paper-plane mr-2"></i>Des questions ?</a>
+      </div>
     </div>
-  </div>
+
+
     <!-- JS & Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
