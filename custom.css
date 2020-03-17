@@ -1,11 +1,43 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #f3f3f3;
+  color: #1B1F3B;
+}
+.bg-red {
+  background-color: #FB8F8A;
+}
+.bg-blue {
+  background-color: #375ABB;
+}
+.txt-blue {
+  color: #375ABB;
+}
+.txt-red {
+  color: #FB8F8A;
+}
+.font-bold {
+  font-weight: 800;
+}
+.font-semi-bold {
+  font-weight: 700;
+}
+.font-light {
+  font-weight: 200;
+}
+.box-title {
+  font-size: 24px;
+}
+.box-title-side {
+  font-size: 20px;
+}
 .footer {
   left: 0;
   width: 100%;
-  background-color: #f5f5f5;
+  background-color: white;
   color: white;
 }
 .step-case {
-  background-color: #F5F5F5;
+  background-color: white;
   border-radius: 20px;
-  width: 60%;
+  width: 70%;
 }
