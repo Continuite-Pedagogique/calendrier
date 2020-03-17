@@ -36,8 +36,12 @@ body {
   background-color: white;
   color: white;
 }
+.nav-pills .nav-link.active {
+  border-bottom: solid 2px #FB8F8A;
+  background-color: transparent;
+  color: #375ABB;
+  border-radius: 0;
+}
 .step-case {
-  background-color: white;
-  border-radius: 20px;
   width: 70%;
 }
