@@ -13,6 +13,23 @@
     <!-- Custom CSS  -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;0,800;1,200;1,400;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="custom.css">
+
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+      (function(f, a, t, h, o, m){
+	  a[h]=a[h]||function(){
+	      (a[h].q=a[h].q||[]).push(arguments)
+	  };
+	  o=f.createElement('script'),
+	  m=f.getElementsByTagName('script')[0];
+	  o.async=1; o.src=t; o.id='fathom-script';
+	  m.parentNode.insertBefore(o,m)
+      })(document, window, '//stats.continuitepedagogique.org/tracker.js', 'fathom');
+      fathom('set', 'siteId', 'XTHGB');
+      fathom('trackPageview');
+    </script>
+    <!-- / Fathom -->
+
   </head>
 
   <!--Start of Tawk.to Script-->
