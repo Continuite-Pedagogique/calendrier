@@ -3,16 +3,31 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
-    <title>Continuité Pédagogique</title>
+    <meta name="description" content="Une communauté de citoyen·nes qui soutiennent les enseignant·es dans leurs pratiques numériques pour assurer (au mieux) la continuité pédagogique durant l’épidémie du coronavirus en France.">
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.svg"/>
+    <title>Calendrier - Continuité Pédagogique</title>
+
+    <!-- OG META -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Continuité Pédagogique.org"/>
+    <meta property="og:description" content="Une communauté de citoyen·nes qui soutiennent les enseignant·es dans leurs pratiques numériques pour assurer (au mieux) la continuité pédagogique durant l’épidémie du coronavirus en France."/>
+    <meta property="og:image" content="https://www.continuitepedagogique.org/assets/img/og-image.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image:alt" content="Une communauté de citoyen·nes qui soutiennent les enseignant·es dans leurs pratiques numériques pour assurer (au mieux) la continuité pédagogique durant l’épidémie du coronavirus en France."/>
+    <meta property="og:url" content="https://www.continuitepedagogique.org"/>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/4accd42ac8.js" crossorigin="anonymous"></script>
 
     <!-- Custom CSS  -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;0,800;1,200;1,400;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font.css">
     <link rel="stylesheet" type="text/css" href="custom.css">
+
+    <!-- SEO -->
+    <meta name="description" content="Une communauté de citoyen·nes qui soutiennent les enseignant·es dans leurs pratiques numériques pour assurer (au mieux) la continuité pédagogique durant l’épidémie du coronavirus en France.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 
     <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
     <script>
@@ -46,94 +61,89 @@
   </script>
   <!--End of Tawk.to Script-->
   
-  <body>
+  <body class="h-100">
+    <!-- alert -->
+    <a href="#contributeurs" class="bg-orange px-3 py-2 text-center text-white d-block">Vous souhaitez contribuer ? Découvrez comment en 👉 cliquant ici 👈</a>
     <!-- Navbar -->
     <nav class="navbar navbar-light bg-white border-bottom justify-content-between">
       <div class="container py-2">
-        <a class="navbar-brand">Continuité Pédagogique<span class="badge badge-secondary ml-2 font-light bg-red" style="font-size:12px;">Bêta</span></a>
+        <a class="navbar-brand">Continuité Pédagogique<span class="badge badge-secondary ml-2 font-light bg-orange" style="font-size:12px;">Bêta</span></a>
         <ul class="nav nav-pills justify-content-end">
           <li class="nav-item">
-            <a class="nav-link" href="http://continuitepedagogique.org">Accueil</a>
+            <a class="nav-link" href="https://www.continuitepedagogique.org">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="http://echanges.continuitepedagogique.org">Échanges</a>
+            <a class="nav-link text-dark active" href="https://echanges.continuitepedagogique.org">Calendrier</a>
           </li>
         </ul>
       </div>
     </nav>
 
-
-
-    <!-- What -->
-    <main role="main" class="container mt-4">
-      <div class="mb-4">
-        <h3 class="mb-2 font-bold box-title">Qu'est-ce que c'est ?</h3>
-        <div class="px-4 pt-4 pb-2 bg-white border rounded"> 
-          <p>Un site pour recenser les formations en live que proposent les enseignants afin de discuter postures, pratiques et prise en main de méthodes et d'outils pour assurer pertinemment la continuité pédagogique, avec les élèves et leurs parents.</p>
+    <main role="bg-white">
+      <div class="container text-center">
+        <h1 class="home-message mt-5">Découvrez les prochaines formations en ligne</h1>
+        <p>Les évènements en ligne ci-dessous sont organisés par des enseignants, des collectifs, des associations. <br> L'ensemble de ces contributeurs sont en accord avec la <a href="#" class="text-dark">charte des contributeurs</a>.</p>
+      </div>
+      <div class="px-5 mt-5">  
+        <ul class="nav nav-tabs container justify-content-around nav-calendar mb-4" id="calendar" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#current" role="tab" aria-controls="current" aria-selected="true">Les prochains moments 👇</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#past" role="tab" aria-controls="past" aria-selected="false">Les moments passés 🗓️</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="current" role="tabpanel" aria-labelledby="current-tab">
+            <iframe src="https://airtable.com/embed/shrDMhnN8T5tEQc7Y?backgroundColor=blue" frameborder="0" onmousewheel="" width="100%" height="700" style="background-color: #ffffff;"></iframe>
+          </div>
+          <div class="tab-pane fade" id="past" role="tabpanel" aria-labelledby="past-tab">
+            <iframe src="https://airtable.com/embed/shrnes3ab8Ce0nfr3?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="700" style="background-color:#ffffff"></iframe>
+          </div>
         </div>
       </div>
-
-      <!-- How -->
-      <div class="mb-5"> 
-        <h3 class="mb-2 font-bold box-title">Comment ça marche ?</h3>
+    
+      <section id="contributeurs" class="mb-5">
+        <h2 class="text-center mt-5 mb-3 border-bottom-blue pb-2 mx-auto w-25">Contribuer en organisant un live</h2>
         <div class="container">
-          <div class="row bg-white border rounded">
-            <!-- col 1/3 -->
-            <div class="col-sm text-center">
-              <div class="step-case mx-auto mb-2">
-                <i class="fas fa-search fa-5x text-primary py-4"></i>
+          <p class="text-center">Que vous soyez passionnés, curieux, chevronnés et ayant testé une pratique intéressante à partager. Vous pouvez aujourd'hui proposer un temps d'atelier en ligne pour échanger autour d'une pratique. Voici comment contribuer :</p>
+          <h3 class="mb-3 mt-5 font-bold">Comment contribuer ?</h3>
+          <div class="row container my-4 ">
+            <div class="col-md-1 mx-3">
+              <div class="number">
+                <p class="text-white number-p text-center">1</p>
               </div>
-              <h4 class="font-semi-bold">Etape 1 : Besoin</h4>
-              <p>J'ai besoin d'aide, d'idées et d'échanges pour assurer la continuité pédagogique.</p>
-            </div><!-- end col 1/3 -->
-            <!-- col 1/2-->
-            <div class="col-sm text-center">
-              <div class="step-case mx-auto mb-2">
-                <i class="fas fa-user-astronaut fa-5x text-primary py-4"></i>
-              </div>
-              <h4 class="font-semi-bold">Etape 2 : Fonctionnement</h4>
-              <p>J’identifie dans le calendrier les propositions qui pourraient me convenir en fonction de mes besoins et de mes disponibilités.</p>
-            </div><!-- end col 1/3 -->
-            <!-- col 1/3 -->
-            <div class="col-sm text-center">
-              <div class="step-case mx-auto mb-2">
-                <i class="far fa-comments fa-5x text-primary py-4"></i>
-              </div>
-              <h4 class="font-semi-bold">Etape 3 : Participation</h4>
-              <p>J'assiste à une visio-conférences sur le sujet donné, je pose mes questions, j’échange mes idées et je repars avec du concret</p>
-            </div><!-- end col 1/3 -->
+            </div>
+            <div class="col-md-9 mx-3 d-flex align-items-center">
+              <p class="">Être en accord avec la <a href="charte-contributeurs.html">charte de contributeur</a>. Cette charte a pour but d'identifier clairement les contributeurs et leurs intentions lorsqu'il s'agit des contenus qu'ils souhaitent partager avec les enseignants.</p>
+            </div>
           </div><!-- end row -->
+          <div class="row container my-4">
+            <div class="col-md-1 mx-3">
+              <div class="number">
+                <p class="text-white number-p text-center">2</p>
+              </div>
+            </div>
+            <div class="col-md-9 mx-3 d-flex align-items-center">
+              <p class="">Faire une demande d'ajout dans la liste des contributeurs.  👉<a href="" class="mx-2">Formulaire contributeur</a>👈 </p>
+            </div>
+          </div><!-- end row -->
+          <div class="row container my-4">
+            <div class="col-md-1 mx-3">
+              <div class="number">
+                <p class="text-white number-p text-center">3</p>
+              </div>
+            </div>
+            <div class="col-md-9 mx-3 d-flex align-items-center">
+              <p class="">L'équipe des évènements en ligne vous contacte pour échanger sur l'organisation des lives et présente les outils à votre disposition pour mettre en ligne votre première contribution.</p>
+            </div>
+          </div><!-- end row -->
+          <h3 class="mb-3 mt-5 font-bold ">Les contributeurs actuels</h3>
+          <iframe class="airtable-embed" src="https://airtable.com/embed/shrFjpReJZjKODjnQ?backgroundColor=yellow&layout=card" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent;"></iframe>
         </div>
-      </div>
+      </section>
+    </div>
 
-      <div class="row">
-        <!-- sidebar -->
-        <div class="col-md-4 order-md-2 mb-4 mt-1">
-          <h3 class="mb-2 font-bold box-title-side">Les contributeurs</h3>
-          <div class="bg-white border rounded px-4 pt-4 pb-2">
-            <iframe class="airtable-embed" src="https://airtable.com/embed/shrFjpReJZjKODjnQ?backgroundColor=yellow&layout=card" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-          </div>
-
-          <h3 class="mb-2 mt-4 font-bold box-title-side">Comment contribuer ?</h3>
-          <div class="bg-white border rounded px-4 pt-4 pb-4">
-            <p>Que vous soyez passionnés, curieux, chevronnés et ayant testé une pratique intéressante à partager. La continuité pédagogique des élèves se construit autour de vos échanges avec vos collègues.<br><br> 
-            Qu'ils soient proches ou à l'autre bout de la France, vous pouvez aujourd'hui proposer un temps d'atelier en ligne pour échanger autour de votre pratique.<br><br>
-            Le collectif continuité pédagogique souhaite vous permettre de rentrer en contact avec d'autres enseignants hors de votre réseau direct en recensant et en communiquant votre contribution à l'effort de formation informelle aux pratiques des collègues !</p>
-            <button type="button" class="btn bg-red text-white" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fab fa-angellist mr-2"></i>Proposer une formation live</button>
-          </div>
-        </div>
-        <!-- Calendar -->
-        <div class="col-md-8 order-md-1 ">
-          <h3 class="mb-2 font-bold box-title">Consulter les prochains moments d'échanges 👇</h3>
-          <div class="bg-white border rounded px-4 pb-2">
-            <h5 class="mt-4 font-italic">Calendrier des jours à venir</h5>
-            <iframe class="airtable-embed" src="https://airtable.com/embed/shrQP9OWlj2EoXnht?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-
-            <h5 class="mt-4 font-italic">Calendrier des anciens lives</h5>
-            <iframe class="airtable-embed" src="https://airtable.com/embed/shrnes3ab8Ce0nfr3?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-          </div>
-        </div>
-      </div><!-- end row-->
 
     </main><!-- end container -->
 

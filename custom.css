@@ -1,19 +1,21 @@
 body {
-  font-family: 'Work Sans', sans-serif;
-  background-color: #f3f3f3;
-  color: #1B1F3B;
+  font-family: "Public Sans", "Work Sans", sans-serif;
+  background-color: white;
+  color: #1b1f3b;
 }
-.bg-red {
-  background-color: #FB8F8A;
+
+.bg-orange {
+  background-color: #ff6b46;
 }
+
 .bg-blue {
-  background-color: #375ABB;
+  background-color: #0d6fec;
 }
 .txt-blue {
-  color: #375ABB;
+  color: #375abb;
 }
-.txt-red {
-  color: #FB8F8A;
+.txt-white {
+  color: white;
 }
 .font-bold {
   font-weight: 800;
@@ -30,6 +32,11 @@ body {
 .box-title-side {
   font-size: 20px;
 }
+.highlight {
+  background-color: #ff6b46;
+  color: white;
+  padding: 5px;
+}
 .footer {
   left: 0;
   width: 100%;
@@ -37,11 +44,280 @@ body {
   color: white;
 }
 .nav-pills .nav-link.active {
-  border-bottom: solid 2px #FB8F8A;
+  border-bottom: solid 2px #ff6b46;
   background-color: transparent;
-  color: #375ABB;
+  color: #1b1f3b;
   border-radius: 0;
 }
 .step-case {
   width: 70%;
+}
+
+.home-message .title {
+  font-size: 48px;
+}
+.home-message p {
+  font-size: 24px;
+  line-height: 50px;
+}
+.manifeste p {
+  font-size: 18px;
+  line-height: 35px;
+  text-align: justify;
+}
+.opacity-40 {
+  opacity: 0.4;
+}
+.que-faire h3 {
+  font-weight: 600;
+}
+.rounded-50 {
+  border-radius: 50px;
+}
+.border-top-large {
+  border-top: solid 10px #ff6b46;
+}
+
+.navbar-brand {
+  font-size: 18px;
+  font-weight: 700; /* semibold */
+}
+
+h1 {
+  font-size: 46px;
+  font-weight: 600; /* semibold */
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600; /* semibold */
+}
+
+p {
+  font-size: 15px;
+  font-weight: 500;
+}
+#appel-mobilisation-section p {
+  text-align: justify;
+}
+.appel-title {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: normal;
+  color: white;
+  background-color: #ff6b46;
+
+  padding: 6px 10px;
+  margin-left: -10px;
+
+  /* min-width: 240px; */
+}
+
+.highlight-blue {
+  color: #0d6fec;
+}
+
+.highlight-orange {
+  color: #ff6b46;
+}
+
+.lead {
+  font-size: 24px;
+  font-weight: 400; /* medium */
+}
+
+a {
+  color: rgb(27, 31, 59);
+  text-decoration: underline;
+  text-decoration-color: #ff6b46;
+}
+
+a.nav-link {
+  text-decoration: none;
+}
+
+a.btn {
+  text-decoration: none;
+}
+
+.border-bottom-blue {
+  border-bottom: solid 5px #0d6fec;
+}
+
+.border-top-blue {
+  border-top: solid 5px #0d6fec;
+}
+.border-cp {
+  border: solid 3px #0d6fec;
+}
+
+.card-buttonbar {
+  text-align: center;
+}
+
+.btn-card {
+  border-radius: 18px;
+  border-color: #0d6fec;
+  border-width: 2px;
+  background-color: white;
+  color: #0d6fec;
+  padding: 2px 10px;
+
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card_container {
+  display: flex;
+  align-items: center;
+}
+
+.illu_bg-rect {
+  background-color: #0d6fec;
+  border-color: #0d6fec;
+
+  background-color: #0d6fec;
+  border-color: #0d6fec;
+  height: 18rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+}
+
+.card {
+  background-color: #0d6fec;
+  border-color: #0d6fec;
+  border-radius: 10px;
+  border-width: 10px;
+}
+.card-body {
+  background-color: white;
+  border-color: white;
+  border-radius: 5px;
+  border-width: 3px;
+  color: #0d6fec;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.card-title {
+  font-weight: 700; /* semibold */
+  text-align: center !important;
+  font-size: 16px;
+}
+dl {
+  font-size: 12px;
+}
+
+dt {
+  font-variant-caps: small-caps;
+  font-weight: 500; /* medium */
+  text-transform: lowercase;
+}
+dd {
+  font-size: 120%;
+}
+
+.illu_card {
+  width: 100%;
+  height: auto;
+  margin-bottom: -10px;
+}
+
+.appel-mobilisation-section--content {
+  position: relative;
+}
+
+.appel-mobilisation-section--content.is--closed {
+  max-height: 10em;
+  overflow: hidden;
+}
+
+.appel-mobilisation-section--toggleButton {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 70%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.appel-mobilisation-section--toggleButton button {
+  border-radius: 18px;
+  border: 2px solid currentColor;
+  background-color: white;
+  color: #ff6b46;
+  padding: 2px 8px;
+  font-size: inherit;
+
+  margin: 0 auto;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.appel-mobilisation-section--toggleButton button:hover,
+.appel-mobilisation-section--toggleButton button:focus {
+  background-color: #ff6b46;
+  color: white;
+}
+
+.legal p {
+  font-size: 20px;
+  line-height: 40px;
+  text-align: justify
+}
+.legal h4 {
+  margin-top: 40px;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+
+.soutiens {
+  border: solid 4px #0d6fec;
+  min-height: 200px;
+}
+
+li {
+  list-style-type: none;
+}
+.nav-calendar{
+  border-bottom: none;
+}
+#calendar .nav-link.active {
+  border-bottom: solid 5px #0d6fec;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+}
+#calendar .nav-link:hover {
+  border-bottom: solid 1px #0d6fec;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+}
+#calendar .nav-item {
+  font-size: 25px;
+}
+#contributeurs p {
+  font-size:18px;
+  text-align: justify;
+}
+.number {
+  background-color: #0d6fec;
+  border-radius:50%;
+  width:70px;
+  height:70px;
+}
+#contributeurs .number-p {
+  font-size:45px;
+  
+  font-weight: 600;
 }
