@@ -292,16 +292,11 @@ li {
   border-bottom: none;
 }
 #calendar .nav-link.active {
-  border-bottom: solid 5px #0d6fec;
-  border-top:none;
-  border-left:none;
-  border-right:none;
+  border: none;
 }
 #calendar .nav-link:hover {
-  border-bottom: solid 1px #0d6fec;
-  border-top:none;
-  border-left:none;
-  border-right:none;
+  border: none;
+  
 }
 #calendar .nav-item {
   font-size: 25px;
@@ -320,4 +315,17 @@ li {
   font-size:45px;
   
   font-weight: 600;
+}
+#engagements ul {
+  padding:25px;
+}
+#engagements li {
+  margin-bottom:20px;
+}
+#engagements li:before {
+  content: "\f00c"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em;
+  width: 1.3em; /* same as padding-left set on li */
 }
