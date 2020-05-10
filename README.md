@@ -1,6 +1,6 @@
 # Introduction
 
-Ce dépôt contient le code source du site
+Ce dépôt contient le code du site
 [echanges.continuitepedagogique.org](https://www.continuitepedagogique.org).
 
 # Comment aider ?
