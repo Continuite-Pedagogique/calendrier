@@ -1,7 +1,7 @@
 # Introduction
 
 Ce dépôt contient le code du site
-[echanges.continuitepedagogique.org](https://www.continuitepedagogique.org).
+[https://agenda.faire-ecole.org](https://agenda.faire-ecole.org).
 
 # Comment aider ?
 
